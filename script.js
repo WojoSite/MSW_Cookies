@@ -58,7 +58,7 @@ $(document).ready(function() {
           $('#ginger-adder').val(0);
           $('#oatmeal-adder').val(0);
         } else {
-          alert("Plese enter a user name to continue.")
+          alert("Submit a user name AND cookie quantities to continue.")
         }
       }
     }
