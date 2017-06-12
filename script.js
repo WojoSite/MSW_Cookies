@@ -24,9 +24,8 @@ $(document).ready(function() {
       logIn: function(){
         userName = $('#name-input').val();
         Cookies.set('username', userName);
-        if ($('#name-input').val() == ""){
-          alert("Please enter a user name to continue.");
-        }
+        var showName = (Cookies.get('username')) ? Cookies.get('username') + "'s Cart" : "Please submit a user name";
+        $('#name-display').html(showName);
       },
       logOut: function(){
         Cookies.set('username', '');
