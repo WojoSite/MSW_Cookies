@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSW_Cookies</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <div id="page-container">
+
+      <!-- LOGIN FORM -->
+      <div id="form-container">
+        <form action="#">
+          <input class="form-input" id="name-input" type="text" value="" placeholder="Name">
+          <!-- <input class="form-input" id="id-input" type="text" value="" placeholder="User ID"> -->
+          <button id="submit-button">Submit</button>
+          <button id="logout-button">Clear Cookies</button>
+        </form>
+      </div>
+
+      <div id="name-container">
+        <p id="name-display"></p>
+      </div>
+
+      <div id="product-container">
+        <div class="product-row">
+          <div class="product-name">Chocolate</div>
+          <input class="adder" id="chocolate-adder" type="number" name="" value="" placeholder="0">
+          <div class="total-label">Total</div>
+          <input class="total" id="chocolate-total" type="number" name="" value="">
+        </div>
+        <div class="product-row">
+          <div class="product-name">Ginger</div>
+          <input class="adder" id="ginger-adder" type="number" name="" value="" placeholder="0">
+          <div class="total-label">Total</div>
+          <input class="total" id="ginger-total" type="number" name="" value="">
+        </div>
+        <div class="product-row">
+          <div class="product-name">Oatmeal</div>
+          <input class="adder" id="oatmeal-adder" type="number" name="" value="" placeholder="0">
+          <div class="total-label">Total</div>
+          <input class="total" id="oatmeal-total" type="number" name="" value="">
+        </div>
+          <button class="addBtn">Add</button>
+      </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="cookies.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
