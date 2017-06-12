@@ -13,7 +13,7 @@ $(document).ready(function() {
         $('#ginger-adder').val(0);
         $('#oatmeal-adder').val(0);
 
-        var showName = (Cookies.get('username')) ? Cookies.get('username') + "'s Cart:" : "Please submit a user name";
+        var showName = (Cookies.get('username')) ? Cookies.get('username') + "'s Cart" : "Please submit a user name";
         $('#name-display').html(showName);
       },
       startListeners: function(){
@@ -22,11 +22,11 @@ $(document).ready(function() {
         $('.addBtn').on("click", BakeryApp.calculate);
       },
       logIn: function(){
-        if ($('#name-input').val() == ""){
-          alert("Please enter your user name to continue.");
-        }
         userName = $('#name-input').val();
         Cookies.set('username', userName);
+        if ($('#name-input').val() == ""){
+          alert("Please enter a user name to continue.");
+        }
       },
       logOut: function(){
         Cookies.set('username', '');
@@ -36,9 +36,7 @@ $(document).ready(function() {
         BakeryApp.showTotals();
       },
       calculate: function(){
-
         if (Cookies.get('username')){
-
           var chocVal = $('#chocolate-adder').val();
           var gingerVal = $('#ginger-adder').val();
           var oatmealVal = $('#oatmeal-adder').val();
