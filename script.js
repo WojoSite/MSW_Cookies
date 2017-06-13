@@ -22,7 +22,7 @@ $(document).ready(function() {
         $('.addBtn').on("click", BakeryApp.calculate);
       },
       logIn: function(){
-        userName = $('#name-input').val();
+        var userName = $('#name-input').val();
         Cookies.set('username', userName);
         var showName = (Cookies.get('username')) ? Cookies.get('username') + "'s Cart" : "Please submit a user name";
         $('#name-display').html(showName);
