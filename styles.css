@@ -34,9 +34,11 @@ body{
   padding: 0 5px;
   height: 40px;
   width: 160px;
-  border: 1px solid #cccccc;
+  /*border: 1px solid #cccccc;*/
   font-size: 16px;
   border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border: 0;
 }
 
 #submit-button, #logout-button{
@@ -46,18 +48,40 @@ body{
   /*margin: 0;*/
   height: 40px;
   width: 120px;
-  color: black;
-  background-color: white;
-  border: 1px solid #cccccc;
+  /*border: 1px solid #cccccc;*/
+  border: 0;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
   border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
-#submit-button:hover, #logout-button:hover, .addBtn:hover{
-   background-color: #cccccc;
+#submit-button{
+  background-color: #3333ff;
 }
+
+#submit-button:hover{
+  background-color: #6666ff;
+}
+
+#submit-button:active{
+  background-color: #0000ff;
+}
+
+#logout-button{
+  background-color: #008000;
+}
+
+#logout-button:hover{
+  background-color: #00b300;
+}
+
+#logout-button:active{
+  background-color: #004d00;
+}
+
 
 #submit-button:active, #logout-button:active, .addBtn:active{
   color: white;
@@ -74,7 +98,7 @@ body{
 #name-display{
   margin: 0;
   font-size: 30px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*=== PRODUCT AREA ===*/
@@ -86,14 +110,26 @@ body{
 
 .product-row{
   position: relative;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
+#product-header-container{
+  margin: 0 0 0 100px;
+}
+
+.header-item{
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
+}
+
+
 .product-name{
-  height: 30px;
+  height: 25px;
   width: 100px;
   font-size: 20px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .adder{
@@ -112,18 +148,30 @@ body{
   /*margin: 0;*/
   height: 40px;
   width: 200px;
-  color: black;
-  background-color: white;
-  border: 1px solid #cccccc;
+  border: 0;
   text-align: center;
   cursor: pointer;
   border-radius: 2px;
   font-size: 20px;
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
+
+.addBtn:hover{
+  background-color: #ff3333;
+}
+
+.addBtn:active{
+  background-color: #cc0000;
+}
+
 
 .total-label{
   margin: 0 0 0 20px;
   font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #4d4d4d;
 }
 
 .total{

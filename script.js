@@ -32,6 +32,7 @@ $(document).ready(function() {
         Cookies.set('chocolate', 0);
         Cookies.set('ginger', 0);
         Cookies.set('oatmeal', 0);
+        $('#name-input').val(null);
         BakeryApp.showTotals();
       },
       calculate: function(){
@@ -39,6 +40,16 @@ $(document).ready(function() {
           var chocVal = $('#chocolate-adder').val();
           var gingerVal = $('#ginger-adder').val();
           var oatmealVal = $('#oatmeal-adder').val();
+          if (chocVal == "" || NaN){
+            chocVal = 0;
+          }
+          if (oatmealVal == "" || NaN){
+            oatmealVal = 0;
+          }
+          if (oatmealVal == "" || NaN){
+            oatmealVal = 0;
+          }
+
           if (Cookies.get('chocolate')){
             var chocVal = parseInt(Cookies.get('chocolate')) + parseInt(chocVal);
           }
