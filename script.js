@@ -46,10 +46,9 @@ $(document).ready(function() {
           if (oatmealVal == "" || NaN){
             oatmealVal = 0;
           }
-          if (oatmealVal == "" || NaN){
+          if (oatmealVal == ""  || NaN){
             oatmealVal = 0;
           }
-
           if (Cookies.get('chocolate')){
             var chocVal = parseInt(Cookies.get('chocolate')) + parseInt(chocVal);
           }
